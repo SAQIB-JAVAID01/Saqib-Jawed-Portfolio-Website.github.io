@@ -1,0 +1,376 @@
+	<!DOCTYPE HTML>
+	<!--
+		Massively by HTML5 UP
+		html5up.net | @ajlkn
+		Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	-->
+	<html lang="en">
+		<head>
+			<title>Saqib Jawed Portfolio</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="assets/css/main.css" />
+			<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<body class="is-preload">
+			<style>
+			/* Container for the h2 elements */
+		.intro-headings {
+			position: relative;
+			height: 40px; /* Adjust based on your font size */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center; /* Center the text horizontally */
+			}
+			/* Style for the h2 elements */
+		.intro-headings h2 {
+			position: absolute;
+			margin: 0;
+			height: 70px;
+			font-size: 1.6rem;
+			opacity: 1;
+			text-align: center;
+			opacity: 0;
+			animation: fadeAnimation 9s infinite ease-in-out; /* Total animation duration */
+			transform: translateY(-50);
+		}
+			/* Specific styles for each h2 element */
+		.intro-headings .data-analyst {
+				animation-delay: 0s;
+				white-space: nowrap;
+		}
+		.intro-headings .bi-developer {
+				animation-delay: 3s;
+				white-space: nowrap;
+		}
+		.intro-headings .financial-analyst {
+				animation-delay: 6s;
+				white-space: nowrap;
+		}
+			/* Keyframes for the overlapping animation */
+		@keyframes fadeAnimation {
+				0% { opacity: 0; /* Start hidden */ }
+				10% { opacity: 1; /* Fade in */ }
+				30% { opacity: 1; /* Stay visible */ }
+				40% { opacity: 0; /* Fade out */ }
+				100% { opacity: 0; /* Stay hidden */ }
+		}
+		#intro h1 {
+				font-family: 'Georgia', sans-serif; /* Change the font family */
+				font-size: 3rem; /* Adjust the font size */
+				color: #f0e5e2; /* Change the text color (e.g., orange) */
+				font-weight: bold; /* Make the text bold */
+				text-transform: uppercase; /* Convert text to uppercase */
+				letter-spacing: 1px; /* Add spacing between letters */
+		}
+		h1 .yellow {
+				color: #FFD700; /* Yellow color for "Saqib" */
+		}
+		/* Style for the profile image */
+		.profile-image {
+				width: 150px; /* Adjust the size as needed */
+				height: 150px; /* Adjust the size as needed */
+				border-radius: 50%; /* Makes the image circular */
+				border: 4px solid #FFD700; /* Adds a border (optional) */
+				margin-bottom: 20px; /* Adds space between the image and the name */
+				display: block; /* Ensures the image is centered */
+				margin-left: auto;
+				margin-right: auto;
+		}
+		/* Adjust the intro section to accommodate the image */
+		#intro {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				padding-top: 20px;
+				background-image: url('images/WhatsApp\ Image\ 2025-03-07\ at\ 11.01.35\ PM.jpeg'); /* Replace with your image path */
+				background-size: cover; /* Ensures the image covers the entire section */
+				background-position: center; /* Centers the image */
+				background-repeat: no-repeat; /* Prevents the image from repeating */
+				color: #ffffff; /* Adjust text color for better contrast */
+		}
+		.center-text {
+			display: flex !important;
+			justify-content: center !important;
+			align-items: center !important;
+			height: 0 !important;
+			text-align: center !important;
+			width: 100% !important;
+			margin-bottom: 0 !important;
+			border: none !important;
+			padding: 0;
+		}
+		.post article {
+			flex: 1 1 100%; /* Full width on mobile */
+        	margin: 10px 0; /* Add spacing between items */
+		}
+		.post.featured {
+			margin-top: 0 !important;
+			padding: 10px !important;
+		}
+		.post.featured h2{
+			font-size: 2rem !important;
+			margin-bottom: 0 !important;
+			padding: 0;
+		}
+		.post.featured p {
+			margin-top: 20px !important;
+			padding: 0;
+			text-align: center;
+		}
+		.posts h2{
+			font-size: 2rem !important;
+			margin-bottom: 0 !important;
+			padding: 0;
+		}
+		.posts p{
+			margin-top: 20px !important;
+			padding: 0;
+			text-align: center;
+		}
+		.posts {
+			border: none !important;
+			margin-bottom: 0 !important;
+		}
+		/* Default styles for all devices */
+		#projects {
+			margin-bottom: 0; /* Adjust this value to reduce space */
+			text-align: center;
+			font-size: 3rem;
+			padding: 15px;
+			height: 90px;
+			font-family: Arial, Helvetica, sans-serif;
+			text-shadow: 2px 2px 5px rgb(245, 193, 4);
+		}
+		/* Certifications Section */
+		#certifications {
+			padding: 40px 20px;
+			background-color: #f9f9f9; /* Light background color */
+			text-align: center;
+		}
+
+		.certification-row {
+			display: flex; /* Flexbox for horizontal layout */
+			justify-content: center; /* Space items evenly */
+			flex-wrap: wrap; /* Wrap items to the next row if needed */
+			gap: 20px; /* Space between items */
+		}
+
+		.certification-item {
+			background-color: #fff; /* White background for each item */
+			border: 1px solid #767671; /* Light border */
+			border-radius: 10px; /* Rounded corners */
+			padding: 20px;
+			width: 250px; /* Adjust width for 3 items in a row */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+			transition: transform 0.3s ease;box-shadow: 0.3s ease;
+			text-align: center;
+		}
+
+		.certification-item:hover {
+			transform: translateY(-10px); /* Lift effect on hover */
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+		}
+
+		.certification-image {
+			max-width: 100%; /* Make image responsive */
+			height: auto;
+			border-radius:10px; /* Rounded corners for images */
+			margin-bottom: 15px;
+		}
+
+		.certification-item h3 {
+			font-size: 1.2rem;
+			margin-bottom: 10px;
+			color: #333; /* Dark text color */
+		}
+/* Mobile-specific styles */
+	@media (max-width: 768px) {
+    	.certification-row {
+        	flex-direction: column; /* Stack items vertically on mobile */
+        	align-items: center; /* Center items horizontally */
+    	}
+		.certification-item {
+        	width: 100%; /* Full width on mobile */
+        	max-width: 300px; /* Limit maximum width for better readability */
+   	 	}
+		.certification-item p {
+			font-size: 0.9rem;
+			color: #666; /* Light text color */
+			line-height: 1.5;
+			margin: 5px;
+		}
+	}
+		/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .certification-item {
+        width: 100%; /* Full width on mobile */
+        padding: 10px; /* Further reduced padding for mobile */
+    }
+
+    .certification-item h3 {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .certification-item p {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+    }
+}
+		</style>
+	</head>
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+			<!-- Intro -->
+			<div id="intro">
+				<img src="images/WhatsApp Image 2025-03-06 at 12.51.36 AM.jpeg" alt="Saqib Jawed" class="profile-image" />
+				<h1><span class="yellow">Saqib</span> Jawed<br /></h1>
+				<div class="intro-headings">
+					<h2 class="data-analyst">Data Analyst</h2>
+					<h2 class="bi-developer">BI Developer</h2>
+					<h2 class="financial-analyst">Financial Analyst</h2>
+				</div>
+				<p>A Finance professional with a strong analytical mindset, now diving deep into the world of data analytics. With a solid foundation in financial modeling, risk assessment, and strategic decision-making, passionate about leveraging data to uncover insights and drive impactful solutions. Explore my portfolio to see how I’m bridging finance and analytics to create value and innovate. 
+				<p>Let’s connect and turn data into actionable insights!
+				<ul class="actions">
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+				</ul>
+			</div>
+					<!-- Header -->
+						<header id="header">
+							<a href="index.html" class="logo">PORTFOLIO</a>
+						</header>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul class="links">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#certifications">Certifications</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/saqib-jawed/" class="icon brands fa-linkedin"><span class="label">Facebook</span></a></li>
+								<li><a href="https://github.com/SAQIB-JAVAID01" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</nav>
+					<!-- Main -->
+						<div id="main">
+							<!-- Main Heading for projects -->
+							<h1 id="projects" style="text-align: center">PROJECTS</h1>
+							<div class="center-text">
+								<p>"Explore my data analytics projects below!"</p>
+							</div>
+							<!-- Featured Post -->
+							<article class="post featured">
+								<h2><a href="https://github.com/SAQIB-JAVAID01/EDA_with_Python">EDA with Python<br /></a></h2>
+								<p>Exploratory data analysis & feature engineering of Flight price data.</p>
+								<a href="https://github.com/SAQIB-JAVAID01/EDA_with_Python" class="image main"><img src="images/python.jpeg" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://saqib-javaid01.github.io/EDA_with_Python/" class="button large">View</a></li>
+								</ul>
+							</article>
+							<!-- Projects Row -->
+								<section class="posts" style="display: flex; flex-wrap: wrap;justify-content: space-between;">
+									<!---Project 1-->
+									<article style="flex: 1 1 48%; margin: 1%;">
+										<header>
+											<h2><a href="https://github.com/SAQIB-JAVAID01/Maria-DB">Maria-DB<br /></a></h2>
+											<p>Explored MariaDB, learned about its pros & cons. Did some analysis by connecting MariaDB with python</p>
+										</header>
+										<a href="https://saqib-javaid01.github.io/Maria-DB/" class="image fit"><img src="images/mariadb-social-share.jpg" alt="" /></a>
+										<ul class="actions special">
+											<li><a href="https://saqib-javaid01.github.io/Maria-DB/" class="button">Explore</a></li>
+										</ul>
+									</article>
+									<!---Project 2-->
+									<article style="flex: 1 1 48%; margin: 1%;">
+										<header>
+											<h2><a href="https://github.com/SAQIB-JAVAID01/Netflix-Data-Analysis">Netflix Data Analysis<br /></a></h2>
+											<p>A Detailed Analysis and visualization of Netflix data Using PowerBi</p>
+										</header>
+										<a href="https://saqib-javaid01.github.io/Netflix-Data-Analysis/" class="image fit"><img src="images/PowerBi.jpeg" alt="" /></a>
+										<ul class="actions special">
+											<li><a href="https://saqib-javaid01.github.io/Netflix-Data-Analysis/" class="button">Explore</a></li>
+										</ul>
+									</article>
+								</section>
+						<!-- Certifications Section -->
+		<section id="certifications" class="certifications">
+		<h2 style="text-align: center; margin-bottom: 30px;">Certifications</h2>
+		<div class="certification-row">
+			<!-- Certification 1 -->
+			<div class="certification-item">
+				<a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-89636cd5-a723-419e-8105-90d47726588a.pdf"><img src="images/images (2).jpeg" alt="Certification 1" class="certification-image" /></a>
+				<h3>Microsoft Excel</h3>
+				<p>Certified in Microsoft Excel From A-Z: Beginner to Expert course
+				<p><strong>Instructor:</strong> Juan E. Galvan, Skylar Bradshaw</p>
+			</div>
+			<!-- Certification 2 -->
+			<div class="certification-item">
+				<a href="https://www.udemy.com/certificate/UC-60b306cf-83de-421f-ae3d-5db2211f19e8/"><img src="images/images (4).jpeg" alt="Certification 2" class="certification-image" /></a>
+				<h3>Data Analyst</h3>
+				<p>Certified in Data Analyst Bootcamp From Basics To Advanced
+				<p><strong>Instructor:</strong> Naik, Jayant Topnani, KRSHAI Technologies Private Limited</p>
+			</div>
+			<!-- Certification 3 -->
+			<div class="certification-item">
+				<a href="https://coursera.org/verify/D8S22EHTVNSE "><img src="images/download (1).jpeg" alt="Certification 3" class="certification-image" /></a>
+				<h3>R Programming</h3>
+				<p>Certified in Data Analysis with R Programming.
+				<p>An online course authorized by Google and offered through Coursera</p>
+			</div>
+			<!-- Certification 4 -->
+			<div class="certification-item">
+				<a href="https://coursera.org/verify/KSJRASD866Z8"><img src="images/python2.jpeg" alt="Certification 3" class="certification-image" /></a>
+				<h3>Python Programming</h3>
+				<p>Certified in  Programming for Everybody (Getting Started with Python).
+				<p>An online course authorized by  University of Michigan and offered through Coursera</p>
+			</div>
+		</div>
+	</section>
+					<!-- Footer -->
+						<footer id="footer">
+							</section>
+							<section id="contact">
+								<section>
+									<h3 style="text-align: left";>Address</h3>
+									<p><a href="#">R-584 15A/2 North Nazimabad, Karachi. <br/></p></a>
+								</section>
+							<section id="contact" class="split contact">
+								<section>
+									<h3 style="text-align: left">Phone</h3>
+									<p><a href="#">0336-8468248<br/></p></a>
+								</section>
+								<section>
+									<h3 style="text-align: left">Email</h3>
+									<p><a href="#">saqibjawed37@gmail.com</a></p>
+								</section>
+								<section>
+									<h3>Social</h3>
+									<ul class="icons alt">
+										<li><a href="https://www.linkedin.com/in/saqib-jawed/" class="icon brands alt fa-linkedin"><span class="label">Facebook</span></a></li>
+										<li><a href="https://github.com/SAQIB-JAVAID01" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+								</section>
+							</section>
+						</footer>
+
+					<!-- Copyright -->
+						<div id="copyright">
+							<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						</div>
+
+				</div>
+
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.scrollex.min.js"></script>
+				<script src="assets/js/jquery.scrolly.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
+
+		</body>
+	</html>
